@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Style/CSS.css">
+    <meta charset="UTF-8">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Style/all.css">
+
+    <style>
+        button {
+            width: 150px;
+            height: 45px;
+            border: 1px solid var(--main-color);
+            border-radius: 20px;
+            background-color: var(--main-color);
+            font-size: 20px;
+            text-align: center;
+            margin: 0 auto;
+            /* توسيط الزر داخل الـ container */
+            display: block;
+            /* جعل الزر عنصراً مستقلّاً داخل الـ container */
+            cursor: pointer;
+            color: white;
+            /* لون النص داخل الزر */
+        }
+
+        button:hover {
+            background-color: var(--main-color);
+            /* لون الخلفية عند التمرير */
+            color: black;
+            /* تغيير لون النص إلى الأسود عند التمرير */
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            min-width: 160px;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 10px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .project1 ,.project2 , .project3 {
+            position: relative;
+            /* جعل الـ container للزر بوضع متغير */
+            text-align: center;
+            /* مركز الزر داخل الـ container */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <h2 class="logo">Portfo<span>lio</span>.</h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#my-projects">
+                            My Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#my-skills">
+                            My Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Ms">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            Contact Me
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div style="clear:both"></div>
+            <div class="intro">
+                <p class="small-title">Hi My Name Is</p>
+                <h1>Abdalmordy</h1>
+                <p class="sub-title">And Iam An <span class="mywork"> Architect</span></p>
+                <a href="">
+                    Get My Services
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="my-projects" class="my-projects">
+        <div class="container">
+            <h1 class="title">My Projects</h1>
+            <p class="sub_title">What I have provided</p>
+        </div>
+        <div class="projects">
+                        <div class="project1">
+                            <br>
+                            <br>
+                            <h1>project 1</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatum consequuntur
+                                , pariatur eos necessitatibus debitis iure, cupiditate odit
+                                quasi nulla culpa, dignissimos tempora perspiciatis sed ev
+                                eniet commodi unde vel. Ea?</p>
+                            <img src="imgs/bg.jpg" alt="">
+                            <div class="button">
+                                <button onclick="toggleDropdown()">More..</button>
+                                <div class="dropdown-content" id="dropdown">
+                                    <img src="imgs/bg.jpg">
+                                    <img src="imgs/bg.jpg">
+                                    <img src="imgs/bg.jpg">
+                                    <img src="imgs/bg.jpg">
+                                </div>
+                            </div>
+                        </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <hr>
+
+
+                        <div class="project2">      
+                            <h1>project 2</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatum consequuntur
+                                , pariatur eos necessitatibus debitis iure, cupiditate odit
+                                quasi nulla culpa, dignissimos tempora perspiciatis sed ev
+                                eniet commodi unde vel. Ea?</p>
+                            <img src="imgs/Abdalmordy.jpg" alt="">
+                            <div class="button">
+                                <button onclick="toggleDropdown()">More..</button>
+                                <div class="dropdown-content" id="dropdown0">
+                                    <img src="imgs/Abdalmordy.jpg">
+                                    <img src="imgs/Abdalmordy.jpg">
+                                    <img src="imgs/Abdalmordy.jpg">
+                                    <img src="imgs/Abdalmordy.jpg">
+                                </div>
+                            </div>
+                        </div>
+                <hr>
+                            <div class="project3">
+                                <div class="project3">
+                                    <h1>project 3</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatum consequuntur
+                                        , pariatur eos necessitatibus debitis iure, cupiditate odit
+                                        quasi nulla culpa, dignissimos tempora perspiciatis sed ev
+                                        eniet commodi unde vel. Ea?</p>
+                                    <img src="imgs/contact image.jpg" alt="">
+                                    <div class="button">
+                                        <button onclick="toggleDropdown()">More..</button>
+                                        <div class="dropdown-content" id="dropdown1">
+                                            <img src="imgs/contact image.jpg">
+                                            <img src="imgs/contact image.jpg">
+
+                                        </div>
+                                    </div>
+                            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        function toggleDropdown() {
+            var dropdown0 = document.getElementById("dropdown");
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+            }
+        }
+
+        // إغلاق القائمة عند النقر في أي مكان آخر
+        document.addEventListener('click', function (event) {
+            var dropdown = document.getElementById("dropdown");
+            var button = document.querySelector("button");
+            if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+                dropdown.style.display = "none";
+            }
+        });
+    </script>
+
+
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="title">About Me</h2>
+            <p class="sub_title">Who i am</p>
+        </div>
+        <div class="content">
+            <div class="image">
+                <img src="imgs/Abdalmordy.jpg">
+            </div>
+            <div class="text">
+                <h3>I am Abdalmordy and I am An <span>Architect</span></h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto atque dolor vitae dicta sit dolorum
+                    eaque ad numquam corporis quasi ducimus, eos asperiores accusantium, reiciendis aliquam itaque
+                    dolorem praesentium temporibus!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto atque dolor vitae dicta sit dolorum
+                    eaque ad numquam corporis quasi ducimus, eos asperiores accusantium, reiciendis aliquam itaque
+                    dolorem praesentium temporibus!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto atque dolor vitae dicta sit dolorum
+                    eaque ad numquam corporis quasi ducimus, eos asperiores accusantium, reiciendis aliquam itaque
+                    dolorem praesentium temporibus!
+                </p>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- /****************************/ -->w
+
+
+
+
+
+
+    <section class="my-skills" id="my-skills">
+        <div class="container">
+            <h1 class="title">My Skills</h1>
+            <p class="subtitle">What am I good at?</p>
+            <div class="skills-">
+
+                <div class="p">
+                    <div class="skills-son">
+                        <i class="fa-solid fa-cube"></i>
+                        <h3>3D Max</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto atque dolor </p>
+                    </div>
+                </div>
+                <div class="p">
+                    <div class="skills-son">
+                        <i class="fa-solid fa-r"></i>
+                        <h3>Revit</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto atque dolor </p>
+                    </div>
+                </div>
+
+                <div class="p">
+                    <div class="skills-son">
+                        <i class="fa-solid fa-a"></i>
+                        <h3>AutoCAD</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto atque dolor </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- /****************************/ -->
+    <hr class="line">
+    <!-- /****************************/ -->
+
+
+
+    <section class="Ms" id="Ms">
+        <div class="container">
+            <h1 class="title">My Services</h1>
+            <p class="subtitle">What i Provide</p>
+            <div class="os">
+
+                <div>
+                    <div class="son">
+                        <i class="fa-solid fa-house"></i>
+                        <h3>External Design</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto atque dolor </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="son">
+                        <i class="fa-solid fa-couch"></i>
+                        <h3>interior design</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto atque dolor </p>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="son">
+                        <i class="fa-solid fa-tree"></i>
+                        <h3>Landscape garden design</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="son">
+                        <img src="imgs/interview-svgrepo-com.svg" alt="SVG Image" class="svg">
+                        <h3>Architectural consulting</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+
+    </section>
+
+
+
+    <!--projects secttions -->
+
+    <section class="projects">
+        <div>
+
+        </div>
+    </section>
+
+    <!-- /****************************/ -->
+
+
+
+
+
+
+    <section class="contact" id="contact">
+        <div class=cont>
+            <h1 class="title">Contant Me</h1>
+            <p class="subtitle">Keep In Touch</p>
+            <div class="text">
+                <h3>Keep In Touch</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non quos delectus officia reprehenderit
+                    ut
+                    harum accusantium vero labore quo.</p>
+                <div class="item">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="discraption">
+                        <p><strong>Name</strong></p>
+                        <p><small>Abdamordy Mohamed</small></p>
+                    </div>
+
+
+                </div>
+                <div style="clear:both"></div>
+
+                <div class="item">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <div class="discraption">
+                        <p><strong>Phone</strong></p>
+                        <p><small>01000000000</small></p>
+                    </div>
+
+
+                </div>
+                <div style="clear:both"></div>
+
+                <div class="item">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div class="discraption">
+                        <p><strong>Email</strong></p>
+                        <p><small>xmusic747200@gmail.com</small></p>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="item">
+                    <hr>
+                    <div class="icon">
+                        <i class="fa-solid fa-paintbrush"></i>
+                    </div>
+
+                    <div class="discraption">
+                        <p><strong>Design and Dvolpment by</strong></p>
+                        <p><small>Yousef Mohamed</small></p>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+
+                <div class="item">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div class="discraption">
+                        <p><strong>Designer Email</strong></p>
+                        <p><small>yousef214200@gmail.com</small></p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+</body>
+
+</html>
